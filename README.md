@@ -1,9 +1,9 @@
 # DockerPHP
 
-##### Версия образа: ```8.1.0RC1-dev-laravel```
-##### Ссылка на Docker HUB: [8.1.0RC1-dev-laravel](https://hub.docker.com/layers/173050329/on1kel/php/8.1.0RC1-dev-laravel/images/sha256-b52e3db3df07bfadb6e7880123541375a5d5378bad91641d9d1363843b7ca590?context=repo)
+##### Версия образа: ```8.1.2```
+##### Ссылка на Docker HUB: [8.1.2](https://hub.docker.com/layers/on1kel/php/8.1.2/images/sha256-7de2c0adb51e613e0e2342a75819eaa55ea5b13d11c4078796403cb974820c08?context=repo)
 
-##### Версия PHP: ```8.1.0RC1```
+##### Версия PHP: ```8.1.2```
 ##### Установленные пакеты:
  * libmemcached-dev
  * libzip-dev
@@ -27,7 +27,7 @@
  * unzip
 
 ##### Установленные расширения:
- * mongodb-1.11.0alpha1
+ * mongodb-1.12.0
  * soap
  * exif
  * pcntl
@@ -43,11 +43,11 @@
  * xdebug
  * memcached
 
-#### Версия Composer: ```2.1.9 2021-10-05 09:47:38```
+#### Версия Composer: ```??```
 
 #### Для Laravel 8.* проекта в корне создать Dockerfile со следующим содержимым:
 ```
-FROM on1kel/php:8.1.0RC1-dev-laravel
+FROM on1kel/php:8.1.2
 
 COPY . /var/www
 
