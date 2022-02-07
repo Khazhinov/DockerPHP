@@ -1,4 +1,4 @@
-FROM php:8.1.0RC1-fpm-bullseye
+FROM php:8.1.2-fpm-bullseye
 
 ENV COMPOSER_MEMORY_LIMIT='-1'
 
@@ -27,7 +27,7 @@ RUN apt-get update && \
 
 # Install MongoDB extention
 
-RUN pecl install mongodb-1.11.0alpha1 && docker-php-ext-enable mongodb
+RUN pecl install mongodb-1.12.0 && docker-php-ext-enable mongodb
 
 # Install soap extention
 RUN docker-php-ext-install soap
